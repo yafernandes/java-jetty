@@ -9,6 +9,12 @@ repositories {
 
 dependencies {
     implementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '11.0.13'
+
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.6'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.5'
+	implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '7.2'
+
+    runtimeOnly files('src/dist/lib/resources')
 }
 
 application {

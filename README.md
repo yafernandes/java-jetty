@@ -22,5 +22,5 @@ curl localhost:9090/hello/world
 ```bash
 gradle jar
 gh release create --prerelease --notes '' --title '' v0.1
-gh release upload v0.1 app/build/libs/app.jar
+gh release upload --clobber v0.1 app/build/libs/app.jar
 ```
